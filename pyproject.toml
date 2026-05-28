@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-cp-sandbox"
+version = "0.1.0"
+description = "A small fail-closed sandbox runner for competitive-programming style executables."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "GGN_2015" },
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Security",
+  "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/GGN-2015/simple-cp-sandbox"
+
+[project.scripts]
+simple-cp-sandbox = "simple_cp_sandbox.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
