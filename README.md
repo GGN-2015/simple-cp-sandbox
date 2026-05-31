@@ -19,6 +19,12 @@ The target profile is useful for competitive-programming style runners:
 
 Only Linux amd64 is supported.
 
+## Documentation
+
+- [Implementation principles](docs/implementation.md) describes the API flow,
+  Linux backend, Landlock filesystem policy, seccomp syscall policy, timeout
+  handling, and security boundaries.
+
 ## Install
 
 ```sh
